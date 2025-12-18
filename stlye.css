@@ -1,0 +1,92 @@
+/* RESET BÁSICO */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  padding: 24px;
+  font-family: sans-serif;
+  background: #fff;
+}
+
+/* REUTILIZABLE */
+.card {
+  background: #faddd9;
+  border-radius: 20px;
+  padding: 24px;
+  min-height: 240px;
+}
+
+/* HEADER */
+.header-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 80px;
+}
+
+.nav {
+  display: flex;
+  list-style: none;
+  gap: 16px;
+}
+
+.nav a {
+  text-decoration: none;
+  color: #000;
+}
+
+/* HERO */
+.hero-text h1 {
+  font-size: 32px;
+  line-height: 1.2;
+}
+
+.hero-text span {
+  font-weight: 300;
+}
+
+.hero-image {
+  background-image: url("PORTRAIT.png");
+  background-size: cover;
+  background-position: center;
+  min-height: 420px;
+}
+
+/* SIDEBAR */
+.sidebar {
+  min-height: 420px;
+}
+
+.thumb {
+  background: #e8bfb9;
+  height: 140px;
+  border-radius: 12px;
+  margin: 16px 0;
+}
+
+.list {
+  list-style: none;
+}
+
+.list li {
+  padding: 8px 0;
+  border-bottom: 1px solid rgba(0,0,0,.2);
+}
+
+/* SEGUNDA FILA */
+.contact {
+  background: #f7b2a6;
+  display: flex;
+  align-items: flex-end;
+  min-height: 260px;
+}
+
+.socials {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 12px;
+}
