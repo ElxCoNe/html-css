@@ -276,7 +276,7 @@
 
 
   
-  /* ===== Base (recomendado) ===== */
+  /* Variables */
 :root {
   --container-pad: 24px;
   --text: #000;
@@ -670,3 +670,329 @@ body {
         padding-left: 10px;
     }
 }
+
+
+
+
+/* OUR FEATURES */
+
+.features {
+  padding: 60px 0;
+}
+
+.features-row {
+  align-items: center;
+}
+
+.features-title {
+  margin: 0;
+  font-size: 30px;
+  font-weight: 600;
+  line-height: 100%;
+  
+}
+
+
+.features-subtitle {
+  margin: 12px 0 0;
+  max-width: 430px;
+  font-size: 18px;
+  line-height: 30px;
+  color: var(--grey);
+  text-align: end; 
+}
+
+
+.features-cta {
+  margin-top: 14px;
+  display: flex;
+  justify-content: flex-start;
+}
+
+
+/* RESPONSIVE FEATURE */
+
+
+
+@media (max-width: 992px) {
+    .features-cta {
+        margin-top: 30px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .features-subtitle {
+        text-align: center;
+        margin-inline: auto
+    }
+    
+    .features-title {
+        display: flex;
+        justify-content: center;
+    }
+
+
+
+}
+
+
+
+@media (min-width: 992px) {
+  .features-title {
+    font-size: 50px;
+  }
+
+  .features-subtitle {
+    margin: 0;
+    text-align: left; 
+  }
+
+  .features-cta {
+    margin-top: 0;
+    justify-content: flex-end;
+  }
+}
+
+
+
+/* CARDS */
+
+
+.feature-cards {
+  padding: 30px 0 60px;
+}
+
+.feature-cards-row {
+  row-gap: 26px;
+}
+
+.fcard {
+  height: 100%;
+}
+
+.fcard-media {
+  background: #f3f6ff;     
+  border-radius: 22px;
+  padding: 26px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.fcard-media img {
+  width: 100%;
+  max-width: 280px;
+  height: 190px;
+  object-fit: contain;
+  display: block;
+}
+
+.fcard-title {
+  margin: 16px 0 8px;
+  font-size: 18px;
+  font-weight: 800;
+  color: #111;
+}
+
+.fcard-text {
+  margin: 0;
+  font-size: 13px;
+  line-height: 1.6;
+  color: #777;
+  max-width: 260px; 
+}
+
+/* CARDS RESPONSIVE */
+
+@media (min-width: 992px) {
+  .fcard-media img {
+    height: 210px;
+  }
+}
+
+
+
+/* BENEFITS */
+
+
+.benefits {
+  padding: 70px 0;
+}
+
+.benefits-row {
+  align-items: center;
+}
+
+/* Left */
+.benefits-title {
+  margin: 0 0 18px;
+  font-size: 40px;
+  line-height: 1.1;
+  letter-spacing: -0.7px;
+  font-weight: 800;
+  color: #111;
+}
+
+.benefits-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  gap: 14px;
+  max-width: 520px;
+}
+
+.benefits-item {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  font-size: 14px;
+  color: #222;
+}
+
+.benefits-check {
+  width: 22px;
+  height: 22px;
+  border-radius: 999px;
+  background: #42b883;
+  color: #fff;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  flex: 0 0 22px;
+}
+
+/* Right */
+.benefits-media {
+  position: relative;
+  margin-top: 26px; 
+  display: flex;
+  justify-content: center;
+}
+
+.benefits-img {
+  width: 100%;
+  max-width: 520px;
+  height: auto;
+  display: block;
+  border-radius: 18px;
+}
+
+
+/* benefittsidfnijsdfji */
+@media (min-width: 992px) {
+  .benefits-media {
+    margin-top: 0;
+    justify-content: flex-end;
+  }
+
+  .benefits-title {
+    font-size: 46px;
+  }
+}
+
+@media (max-width: 420px) {
+  .benefits-title {
+    font-size: 34px;
+  }
+
+}
+
+
+
+
+/* FOOTER */
+
+.site-footer {
+  background: #0f172a; 
+  color: #cbd5e1;
+  padding: 70px 0 30px;
+}
+
+/* Top */
+.footer-top {
+  margin-bottom: 40px;
+}
+
+.footer-brand {
+  max-width: 280px;
+}
+
+.footer-logo {
+  margin: 0 0 10px;
+  font-size: 34px;
+  font-weight: 800;
+  color: #42b883;
+}
+
+.footer-desc {
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.6;
+  color: #94a3b8;
+}
+
+/* Columns */
+.footer-title {
+  margin: 0 0 14px;
+  font-size: 14px;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.footer-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 10px;
+}
+
+.footer-list a {
+  text-decoration: none;
+  font-size: 14px;
+  color: #94a3b8;
+}
+
+.footer-list a:hover {
+  color: #ffffff;
+}
+
+/* Bottom */
+.footer-bottom {
+  align-items: center;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  padding-top: 20px;
+}
+
+.footer-copy {
+  margin: 0;
+  font-size: 13px;
+  color: #94a3b8;
+}
+
+.footer-legal {
+  display: flex;
+  justify-content: flex-start;
+  gap: 10px;
+  font-size: 13px;
+}
+
+.footer-legal a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.footer-legal span {
+  color: #64748b;
+}
+
+/* foper */
+@media (min-width: 992px) {
+  .footer-legal {
+    justify-content: flex-end;
+  }
+}
+
+/* SI ALGUIEN LEE ESTO, ME DEBE UNA MONSTER BLANCA */
